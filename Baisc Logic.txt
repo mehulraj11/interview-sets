@@ -1,0 +1,128 @@
+Category 1 — Basic Output & Input
+
+---1> Print your name 5 times using a loop.
+---2> Input 2 numbers and print their sum, difference, product, division.
+---3> Convert temperature Celsius ↔ Fahrenheit.
+	celsius = (farenheit - 32) * 5 / 9;
+	farenheit = (celsius * 9 / 5) + 32;
+---4> Swap two numbers (with and without third variable).
+	a = a+b;
+	b = a-b;
+	a = a-b;
+---5>Find ASCII value of a character.
+
+Category 2 — Condition Based Logic (If-Else)
+
+---6> Check whether a number is even or odd.
+---7> Check whether a number is positive, negative or zero.
+---8> Find the greatest of two numbers.
+---9> Find the greatest of three numbers (use if-else).
+---10> Check whether a person is eligible to vote (age ≥ 18).
+---11> Check if a given character is vowel or consonant.
+	if("aeiouAEIOU".indexOf(ch) != -1)
+---12> Input marks and print grade (A, B, C, D, F).
+---13> Check whether a year is leap year or not.
+	if((year % 4 == 0 && year % 100 != 0) || year % 400 == 0)
+---14> Check if a number is divisible by 5 and 11.
+---15 >Check whether a character is uppercase, lowercase, digit or special symbol.
+
+Category 3 — Loops & Iterations
+
+---16> Print numbers 1 to 100.
+---17> Print all even numbers from 1 to N.
+---18> Print table of any number.
+---19> Print sum of first N natural numbers.
+---20> Print sum of even & odd numbers separately upto N.
+---21> Print factorial of a number.
+---22> Reverse a given number.
+---23> Count digits in a number.
+---24> Check if number is palindrome.
+---25> Print Fibonacci series up to N.
+->pascal's triangle
+
+Category 4 — Number Logic
+->roman to integer
+---26> Find HCF / GCD of two numbers.
+---27> Find LCM of two numbers.
+	int lcm = a * b / HCF;
+---28> Check if a number is prime or not.
+---29> Print all prime numbers between two limits.
+---30> Check if number is Armstrong.
+---31> Check if number is perfect number (sum of divisors = number).
+---32> Count digits, sum of digits of a number.
+---33> Find power of a number using loop.
+---34> Reverse digits and check symmetrical properties.
+---35> Generate random numbers in given range.
+	int random = (int)(Math.random() * (max - min + 1)) + min;
+---36> Composite Number
+
+Category 5 — Patterns (Very Basic Star & Number Patterns)
+
+➡️ Take input N, print following:
+
+*
+**
+***
+****
+*****
+
+*****
+****
+***
+**
+*
+
+1
+12
+123
+1234
+
+1
+22
+333
+4444
+
+1
+2 3
+4 5 6
+7 8 9 10
+
+A
+AB
+ABC
+ABCD
+
+
+Hollow square or rectangle pattern.
+
+Pyramid pattern (even small one).
+
+Floyd’s Triangle pattern.
+
+Right aligned triangle.
+
+Category 6 — Strings (Beginner Level)
+
+Count vowels in a string.
+Reverse a string without using reverse function.
+Check if string is palindrome.
+Convert lowercase to uppercase without built-in.
+Remove spaces from string.
+Count words in a sentence.
+Find frequency of each character.
+Replace spaces with hyphen.
+Compare two strings without using ==.
+Print each character separately.
+
+Category 7 — Arrays (Only Basics)
+
+Input 5 numbers and print them.
+Find sum of elements of array.
+Find maximum & minimum element.
+Count even & odd numbers in array.
+Search an element (linear search).
+Reverse array without new array.
+Copy array into another array.
+Find duplicate elements.
+Count frequency of specific element.
+Find average of array numbers.

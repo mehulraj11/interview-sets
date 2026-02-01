@@ -1,0 +1,43 @@
+---1> Count vowels & consonants in a string.
+if("aeiou".indexOf(c) != -1)
+---2> Convert string to uppercase but only alternate characters should change.
+---3> Reverse a string without using built-in reverse().
+---4> Find the number of words in a sentence without using split().
+---5> Replace all spaces with - (dash) manually without replace().
+---6> Print the string in reverse order word-wise.
+input : "I love Java"
+output: "Java love I"
+---7> Remove duplicate characters from a string while keeping original order.
+---8> Count frequency of each character and print character with highest freq.
+9>Shift each character by +2 in alphabet (a→c, y→a, etc.) like Caesar Cipher.
+(char) ((c - 'a' + key) % 26 + 'a');
+10>Check if one string is rotation of another.
+"abcde" & "cdeab" → true
+return (s1 + s1).contains(s2);
+---11> Capitalize the first letter of every word manually.
+---12> Find the longest word from a sentence.
+---13> Count occurrences of each word in a sentence. (use maps or without maps)
+---14> Swap first and last character of every word.
+---15> Check if two strings are anagrams without using sorting.
+16> Print all substrings of a string.
+17>Find the longest palindromic substring.
+---18>Given a string, remove characters appearing more than once.
+---19>Compress a string like:
+input : aaabbcccaaa → output : a3b2c3a3
+---20>Reverse characters in each word but keep order of words same.
+---21>Sort words of a sentence based on their length.
+22>Count only consonants of each word (same as before but modify to show only words with highest consonant count).
+---23> Find the first non-repeating character in a string.
+---24>Check if string contains only alphabets (no digits, no symbols).
+25>Convert a sentence to title format (like Book Title Rules — skip small words such as "is", "an", "the").
+26 >a2b3c1 → expand → aabbbc
+---27> Detect if a sentence is pangram (contains A–Z at least once).
+---28> Reverse only vowels, keep consonants fixed.
+29> Print words sorted by vowel count.
+30> Generate the next alphabetical string sequence:
+"azz" → "baa"
+
+freq -> 8, 18, 23, 15, 27, 9, 29
+split() -> 6, 11, 12, 13, 14, 20, 21, 22, 25, 29, 1
+two pointer -> 3, 6, 16, 17, 28, 30
+manual iteration logic(no builts-in) -> 2, 4, 5, 7, 24, 26, 9, 30

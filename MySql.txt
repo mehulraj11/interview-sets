@@ -1,0 +1,205 @@
+LEVEL 1: SQL BASICS (FOUNDATION)
+Concept Questions:
+What is SQL?
+Difference between SQL and MySQL
+What is a database?
+What is a table?
+What is a row and column?
+What is a primary key?
+What is a foreign key?
+What is a unique key?
+What is a composite key?
+What is NULL?
+What is AUTO_INCREMENT?
+What are data types in MySQL?
+Difference between CHAR and VARCHAR
+Difference between DELETE, TRUNCATE, and DROP
+What is DEFAULT constraint?
+
+Basic Query Practice:
+
+Create a database
+Create a table
+Insert single record
+Insert multiple records
+Select all records
+Select specific columns
+Use WHERE clause
+Use AND, OR
+Use IN
+Use BETWEEN
+Use LIKE
+Use ORDER BY
+Use LIMIT
+
+LEVEL 2: FUNCTIONS & EXPRESSIONS
+Concept Questions:
+
+What are aggregate functions?
+Difference between COUNT(*) and COUNT(column)
+What is GROUP BY?
+What is HAVING?
+Difference between WHERE and HAVING
+What are scalar functions?
+What is DISTINCT?
+
+Query Practice:
+
+Count total records
+Find maximum value
+Find minimum value
+Find average value
+Find sum
+Count records per group
+Filter grouped data using HAVING
+Find duplicate records
+Remove duplicate records
+Find records with NULL values
+
+LEVEL 3: JOINS (VERY IMPORTANT)
+
+Concept Questions:
+
+What is a join?
+Types of joins
+Difference between INNER JOIN and LEFT JOIN
+Difference between LEFT JOIN and RIGHT JOIN
+What is SELF JOIN?
+What is CROSS JOIN?
+
+Join Query Practice:
+
+Fetch records using INNER JOIN
+Fetch records using LEFT JOIN
+Fetch records using RIGHT JOIN
+Fetch records using FULL JOIN (MySQL alternative)
+Find records without matching rows
+Join more than two tables
+Find employees without department
+--->Fetch highest salary per department
+Fetch department-wise employee count
+
+LEVEL 4: SUBQUERIES & NESTED QUERIES
+
+Concept Questions:
+
+What is a subquery?
+Types of subqueries
+Difference between subquery and join
+Correlated vs non-correlated subquery
+
+-->Query Practice:
+
+Find 2nd highest salary
+-->Find Nth highest salary
+Find employees earning more than average
+Fetch records using subquery in WHERE
+Fetch records using subquery in FROM
+Fetch records using subquery in SELECT
+Find departments with no employees
+-->Find highest salary per department using subquery
+
+LEVEL 5: CONSTRAINTS & INDEXES
+
+Concept Questions:
+
+What is a constraint?
+Types of constraints
+What is an index?
+Types of indexes
+Difference between clustered and non-clustered index
+When should indexes be avoided?
+What is a composite index?
+
+Query Practice:
+
+Create primary key
+Add foreign key
+Add unique constraint
+Create index
+Drop index
+Find indexes on a table
+
+LEVEL 6: TRANSACTIONS & ACID
+
+Concept Questions
+
+What is a transaction?
+What is ACID?
+What are isolation levels?
+What is a deadlock?
+What is commit and rollback?
+
+Query Practice:
+
+Start transaction
+Commit transaction
+Rollback transaction
+Savepoint usage
+Demonstrate dirty read
+
+LEVEL 7: VIEWS, PROCEDURES & TRIGGERS
+
+Concept Questions:
+
+What is a view?
+Advantages of views
+What is a stored procedure?
+Stored procedure vs function
+What is a trigger?
+Types of triggers
+What is a cursor?
+
+Query Practice
+
+Create a view
+Update data through a view
+Create stored procedure
+Call stored procedure
+Create trigger
+Drop trigger
+
+LEVEL 8: PERFORMANCE & OPTIMIZATION
+Concept Questions
+
+What is query optimization?
+How does indexing improve performance?
+What is EXPLAIN?
+What is query execution plan?
+How to find slow queries?
+What is normalization?
+What is denormalization?
+
+Query Practice:
+
+Use EXPLAIN
+Optimize a slow query
+Find missing indexes
+Compare indexed vs non-indexed query
+Avoid full table scan
+
+LEVEL 9: SCENARIO-BASED QUESTIONS (INTERVIEW FAVORITE)
+
+Why is index not used in some queries?
+Why SELECT * is bad?
+How to handle duplicate data?
+How to design tables for large data?
+How to improve insert performance?
+How to handle millions of records?
+How to avoid deadlocks?
+How to paginate results efficiently?
+
+LEVEL 10: MUST-PRACTICE SQL PROBLEMS
+
+Find 2nd / 3rd / Nth highest salary
+Delete duplicate rows
+Find missing IDs
+Swap column values
+Find odd & even records
+Find continuous records
+Find top 3 salaries per department
+Find employees hired in last 30 days
+Find running total
+Rank employees using window functions
+Remove spaces from string
+Case-insensitive search
