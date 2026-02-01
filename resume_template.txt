@@ -1,0 +1,207 @@
+\documentclass[letterpaper,12pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{xcolor}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+% ----------FONT OPTIONS----------
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Define custom color
+\definecolor{customblue}{HTML}{0610DB}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{customblue}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeEducationHeading}[6]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+      \textit{\small#5} & \textit{\small #6} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeadingWithThreeLinks}[5]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \href{#2}{\textbf{\small GitHub}} | \href{#3}{\textbf{\small LIVE}} \\
+      \textit{\small#4} & \textit{\small #5} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Huge \scshape Mehul Raj} \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ +91 6203159409 ~ \href{mailto:mailtomehulraj@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  mailtomehulraj@gmail.com} ~ 
+    \href{https://www.linkedin.com/in/mhvats/}{\raisebox{-0.2\height}\faLinkedin\ LinkedIn} ~
+    \href{https://github.com/mehulraj11}{\raisebox{-0.2\height}\faGithub\ GitHub} ~
+    \href{https://portfoli-mhvats.onrender.com/}{\raisebox{-0.2\height}\faGlobe\ Portfolio}
+    \vspace{-8pt}
+\end{center}
+
+%-----------SUMMARY-----------
+\section{Summary}
+Postgraduate students skilled in full-stack web development using the MERN stack and moving towards Next.js
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+    
+      \resumeProjectHeading
+          {\textbf{Stack Underflow} $|$ \emph{React, WebSocket, Express, MongoDB, JWT}}{\href{https://github.com/mehulraj11/stackunderflow}{GitHub} | \href{https://stackunderflow-mhvats.onrender.com/}{LIVE}}
+          \resumeItemListStart
+            \resumeItem{Clone similar to Stack Overflow where users can ask or answer technical questions, like and comment.}
+            \resumeItem{Stack Underflow has been built over the MERN stack. }
+            \resumeItem{Users can upvote or downvote, and authentication is based on JWT and OAuth email verification.}
+            \resumeItem{Real-time updates, including notifications and comments, utilising WebSocket, as well as filtering and searching.}
+            \resumeItem{Role-Based Moderation for better security.}
+          \resumeItemListEnd
+          \vspace{-16pt}
+          
+      \resumeProjectHeading
+          {\textbf{Helpdesk System} $|$ \emph{React, Express, MongoDB, WebSocket}}{\href{https://github.com/mehulraj11/helpdesk}{GitHub} | \href{https://helpdesk-mhvats.onrender.com/}{LIVE}}
+          \resumeItemListStart
+            \resumeItem{A helpdesk system which is used for handling technical and operational issue related to an organization.}
+            \resumeItem{It is based on Role-Based Access Control(RBAC) model, each role has its own permissions.}
+            \resumeItem{Web app is based on MERN stack for better user experience.}
+            \resumeItem{Redux is used for state management and websocket for real-time online status and tailwindCss is used for responsive UI.}
+            \resumeItem{Backend is based on Model View Control(MVC) structure.}
+          \resumeItemListEnd
+          \vspace{-13pt}
+          
+      \resumeProjectHeading
+          {\textbf{Expense Tracker} $|$ \emph{React, Express, MongoDB, RESTful API}}{\href{https://github.com/mehulraj11/backend-mern-exepense-tracker}{GitHub} | \href{https://expensetracker-mhvats.onrender.com/}{LIVE}}
+          \resumeItemListStart
+            \resumeItem{Web Application which will be used for managing and tracking expenses and income.}
+            \resumeItem{Whole application is based on MERN stack for better user experience and interactions through charts.}
+            \resumeItem{Context API is used for state management and Chart.js for visualization of income and expenses.}
+            \resumeItem{Category filters and real-time updates for smooth user experience with responsive UI through TailwindCSS and client-side navigation through React Router.}
+          \resumeItemListEnd
+          \vspace{-13pt}
+          
+    \resumeSubHeadingListEnd
+\vspace{-5pt}
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: C, JavaScript, Java} \\
+     \textbf{Frontend}{: HTML, CSS, JavaScript, React, Redux, TailwindCSS, EJS} \\
+     \textbf{Database}{: MySQL, NoSQL (MongoDB)} \\
+     \textbf{Backend/Framework}{: Node.js, Express} \\
+     \textbf{Tools and Platforms}{: Git, GitHub, Visual Studio Code, IntelliJ, Docker, Postman, Insomnia, Figma} \\
+     \textbf{Others}{: WebSockets, RESTful API, JWT, Mongoose, CORS, CRUD Operations} \\
+    }}
+ \end{itemize}
+\vspace{-15pt}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Bachelor of Computer Application}{Oct 2021 -- 2024}
+      {Percentage: 75\%}{}
+    \resumeSubheading
+      {Master of Computer Application}{Sep 2024 -- 2026}
+      {Pursuing}{}
+  \resumeSubHeadingListEnd
+
+%-----------CERTIFICATIONS-----------
+\section{Certifications}
+\begin{itemize}[leftmargin=0.15in, label={}]
+   \small{\item{
+    \textbf{WEB DEVELOPMENT} | {\href{https://drive.google.com/file/d/18kGssCxA1HwbboVO52QmFzGdJqlARszk/view?usp=drivesdk}}{Udemy} \\
+    \textbf{Java} | {\href{https://drive.google.com/file/d/12a7ap6lI78-_bH71Kdyv0fnfRT6bKXNT/view?usp=drivesdk}}{IIT Bombay} \\
+   }}
+\end{itemize}
+
+\end{document}

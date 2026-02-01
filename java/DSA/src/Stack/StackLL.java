@@ -1,0 +1,65 @@
+package Stack;
+
+class StackLL
+{
+	class Node
+	{
+		int data;
+		Node next;
+		
+		public Node(int data)
+		{
+			this.data = data;
+			this.next = null;
+		}	
+	}
+	private Node top = null;
+
+	public void push(int val)
+	{
+		Node newNode = new Node(val);
+		newNode.next = top;
+		top = newNode;
+	}
+	public int pop()
+	{
+		if(top == null) return 0;
+
+		int value = top.data;
+		top = top.next;
+		return value;
+	}
+	public int peek()
+	{
+		if(top == null) return 0;
+		return top.data;
+	}
+	public boolean isEmpty()
+	{
+		return top == null;
+	}
+	public int size()
+	{
+		int count =0;
+		Node temp = top;
+		while(temp != null)
+		{
+			temp = temp.next;
+			++count;
+		}
+		return count + 1;
+	}
+	public static void main(String[] args)
+	{
+		StackLL st = new StackLL();
+
+		st.push(10);
+        	st.push(20);
+        	st.push(30);
+
+		System.out.println(st.peek()); 
+	        System.out.println(st.pop());  
+        	System.out.println(st.peek()); 
+        	System.out.println(st.size()); 
+	}
+}

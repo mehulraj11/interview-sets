@@ -1,0 +1,25 @@
+class Stack
+{
+	static int top = -1;
+	final int size = 10;
+	int[] stack = new int[size];
+
+	public int push(int val)
+	{
+		if(top == (size -1))
+		{
+			return -1;	
+		}
+		
+		top += 1;
+		stack[top] = val;
+
+		return 1;
+	} 
+	
+	public static void main(String[] args)
+	{
+		Stack st = new Stack();
+		st.push(1);
+	}
+}

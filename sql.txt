@@ -1,0 +1,75 @@
+🔹 DDL + DML
+
+Create a new table Project (proj_id, proj_name, start_date, dept_id) and insert at least 3 rows.
+
+Add a new column phone VARCHAR(15) in the Employee table and update phone numbers for all employees.
+
+Delete the employee whose name is Eve.
+
+🔹 Filtering & Conditions
+
+Find all employees who have a salary greater than 50,000 and belong to the IT department.
+
+Show employees who do not belong to Sales department.
+
+Find employees whose name starts with ‘A’ or ends with ‘k’.
+
+Retrieve employees whose salary is between 40,000 and 80,000.
+
+🔹 Sorting & Limiting
+
+List the top 2 highest-paid employees.
+
+Show all employees ordered by their hire date (oldest first).
+
+🔹 IN / NOT IN
+
+Show employees who work in departments IT or Finance.
+
+Show employees who are not in HR or Sales departments.
+
+🔹 String Functions
+
+Display each employee’s name in uppercase and the first 5 letters of their email.
+
+Find employees whose email contains the word “it”.
+
+🔹 Aggregate Functions
+
+Find the total number of employees in the company.
+
+Find the average salary of employees in the IT department.
+
+Find the highest and lowest salary in the company.
+
+🔹 Date Functions
+
+Show employees who joined in the year 2021.
+
+Find the number of days each employee has worked in the company till today.
+
+Display employee names along with their joining month name.
+
+🔹 CASE Operator
+
+Categorize employees into salary groups:
+
+High (> 80,000)
+
+Medium (50,000 – 80,000)
+
+Low (< 50,000)
+
+🔹 GROUP BY + HAVING
+
+Find the number of employees in each department.
+
+Show departments where the average salary is more than 55,000.
+
+🔹 Joins
+
+Display employee names along with their department name and location.
+
+Show employees along with their project name (using the new Project table).
+
+Find the departments that have no employees assigned.
